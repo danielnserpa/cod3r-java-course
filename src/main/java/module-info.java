@@ -4,6 +4,6 @@ module org.example.exercises {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens org.example.exercises to javafx.fxml;
-    exports org.example.exercises;
+    opens org.example.standard to javafx.fxml;
+    exports org.example.standard;
 }
