@@ -20,7 +20,7 @@ public class DaysCounter {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Have you found a job yet? Y/N");
         String answer = scanner.nextLine();
@@ -31,9 +31,9 @@ public class DaysCounter {
         }
 
         if (answer.equalsIgnoreCase("n")) {
-            System.out.println("You have been looking for jobs for " + daysPassed + " days and owes €" + daysPassed);
+            System.out.println("You have been looking for jobs for " + daysPassed + " days");
         } else {
-            System.out.println("Congratulations, you found a job and owes €" + daysPassed);
+            System.out.println("Congratulations, you found a job");
         }
 
         scanner.close();
