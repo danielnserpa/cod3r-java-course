@@ -19,5 +19,6 @@ public class PrimitiveTypes {
 
         //Character
         char status = 'A';
+
     }
 }
