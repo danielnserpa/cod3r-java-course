@@ -51,7 +51,7 @@ public class ArithmeticChallenge {
 
         int d =  c / (int) Math.pow(10, 3);
 
-        System.out.println(d);
+        System.out.println("Result" + d);
 
 
 
