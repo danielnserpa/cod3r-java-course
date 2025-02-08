@@ -22,5 +22,6 @@ public class DoWhile {
                 System.out.println("I know this country: " + answer + "\n");
             }
         } while (finished);
+        scanner.close();
     }
 }
