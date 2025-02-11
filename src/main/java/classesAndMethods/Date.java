@@ -21,7 +21,7 @@ public class Date {
     }
 
     String formattedDate(){
-        return String.format("\n%d, %d, %d",day, month, year);
+        return String.format("\n%d/%d/%d",day, month, year);
     }
 
 
