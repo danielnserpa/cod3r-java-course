@@ -24,5 +24,8 @@ public class Date {
         return String.format("\n%d/%d/%d",day, month, year);
     }
 
+    void printDate() {
+        System.out.println(formattedDate());
+    }
 
 }

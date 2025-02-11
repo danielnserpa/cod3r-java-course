@@ -28,6 +28,8 @@ public class DateTest {
         System.out.println(d1.formattedDate(d1.day, d1.month, d1.year));
         System.out.println(d3.formattedDate());
 
+        d2.printDate();
+
 
     }
 }
