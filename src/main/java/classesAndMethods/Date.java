@@ -24,6 +24,7 @@ public class Date {
         return String.format("\n%d/%d/%d",day, month, year);
     }
 
+    // This method only works on the terminal. Doesn't work on web app, or desktop app or anything
     void printDate() {
         System.out.println(formattedDate());
     }
