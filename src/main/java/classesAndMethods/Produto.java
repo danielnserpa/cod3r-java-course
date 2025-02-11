@@ -6,21 +6,22 @@ public class Produto {
     double preco;
     double desconto;
 
-public Produto(String nome, double preco, double desconto) {
-    this.nome = nome;
-    this.preco = preco;
-    this.desconto = desconto;
+    public Produto(String nome, double preco, double desconto) {
+        this.nome = nome;
+        this.preco = preco;
+        this.desconto = desconto;
 
-}
+    }
 
-double produtoComDesconto() {
+    double produtoComDesconto() {
 
-    return preco - desconto;
-}
+        return preco - desconto;
+    }
 
-double produtoComDescontoParam(double preco, double desconto) {
+    double produtoComDescontoParam(double preco, double desconto) {
 
-    return preco - desconto;
-}
+        return preco - desconto;
+    }
+
 
 }
