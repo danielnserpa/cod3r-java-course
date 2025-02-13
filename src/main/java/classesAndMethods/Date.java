@@ -16,7 +16,6 @@ public class Date {
     }
 
     String formattedDate(int day, int month, int year) {
-
             return String.format("\n%d, %d, %d",day, month, year);
     }
 
@@ -28,5 +27,4 @@ public class Date {
     void printDate() {
         System.out.println(formattedDate());
     }
-
 }
