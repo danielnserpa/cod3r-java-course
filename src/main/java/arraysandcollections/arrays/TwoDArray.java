@@ -1,5 +1,6 @@
 package arraysandcollections.arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDArray {
@@ -30,7 +31,11 @@ public class TwoDArray {
 
         double mediaPreco = totalPreco / (pratos * ingredientes);
 
-        System.out.printf("%2d",mediaPreco);
+        System.out.println(mediaPreco);
+
+        for (double[] ingrediente : ingredientesDosPratos) {
+            System.out.println(Arrays.toString(ingrediente));
+        }
 
         scanner.close();
     }
