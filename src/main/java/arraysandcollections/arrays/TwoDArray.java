@@ -23,9 +23,9 @@ public class TwoDArray {
             for (int i = 0; i < ingredientesDosPratos[p].length; i++) {
 
                 System.out.printf("Qual o preco do ingrediente %d do prato %d? ", i + 1, p + 1);
-                ingredientesDosPratos[i][p] = scanner.nextDouble();
+                ingredientesDosPratos[p][i] = scanner.nextDouble();
 
-                totalPreco += ingredientesDosPratos[i][p];
+                totalPreco += ingredientesDosPratos[p][i];
             }
         }
 
