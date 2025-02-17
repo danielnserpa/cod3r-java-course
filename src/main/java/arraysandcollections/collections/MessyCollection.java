@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MessyCollection {
+    @SuppressWarnings({"rawtypes", "unchecked"})
     public static void main(String[] args) {
         HashSet collection = new HashSet();
 
