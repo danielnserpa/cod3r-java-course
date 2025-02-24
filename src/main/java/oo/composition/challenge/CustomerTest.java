@@ -21,8 +21,10 @@ public class CustomerTest {
         Purchase p2 = new Purchase();
 
         p2.addItem(new Product("Car", 45500), 1);
+        p2.addItem(new Product("Window", 318), 2);
 
         System.out.println(p1.getTotalValue());
+        System.out.println(p2.getTotalValue());
 
         // Qualquer um dos dois jeitos funcionaria para assignar uma compra ao cliente, mas o segundo precisa criar o método
         // customer1.purchases.add(p1);
