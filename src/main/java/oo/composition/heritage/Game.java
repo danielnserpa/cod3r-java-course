@@ -4,6 +4,11 @@ public class Game {
     public static void main(String[] args) {
 
         Player p1 = new Player();
+        Player p2 = new Player();
+
+        p2.attack(p1);
+
+        System.out.println(p1.life + "\n");
 
         p1.walk(Direction.NORTH);
         p1.walk(Direction.NORTH);
@@ -14,7 +19,18 @@ public class Game {
         p1.walk(Direction.SOUTH);
         p1.walk(Direction.WEST);
 
-        System.out.println(p1.y);
-        System.out.println(p1.x);
+        p1.walk(Direction.WEST);
+        p1.walk(Direction.WEST);
+        p1.walk(Direction.WEST);
+        p1.walk(Direction.WEST);
+        p1.walk(Direction.WEST);
+
+        p2.x = p1.x;
+        p2.y = p1.y;
+
+        p2.attack(p1);
+
+        System.out.println(p1.life + "\n");
+
     }
 }
