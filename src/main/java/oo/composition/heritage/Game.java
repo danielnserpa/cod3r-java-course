@@ -32,5 +32,14 @@ public class Game {
 
         System.out.println(p1.life + "\n");
 
+        Player h1 = new Hero();
+
+        h1.x = p1.x;
+        h1.y = p1.y;
+
+        p2.attack(h1);
+
+        System.out.println(h1.life);
+
     }
 }
