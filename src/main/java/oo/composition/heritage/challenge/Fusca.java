@@ -1,11 +1,11 @@
 package oo.composition.heritage.challenge;
 
 public class Fusca extends Car{
-
+    @Override
     void accelerateCar ( ){
         this.speed += 10;
     }
-
+    @Override
     void breakCar (){
         this.speed  -= 10;
 

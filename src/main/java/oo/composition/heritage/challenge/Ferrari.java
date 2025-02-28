@@ -2,10 +2,11 @@ package oo.composition.heritage.challenge;
 
 public class Ferrari extends Car {
 
+    @Override
     void accelerateCar (){
         this.speed += 15;
     }
-
+    @Override
     void breakCar (){
         this.speed  -= 15;
 
