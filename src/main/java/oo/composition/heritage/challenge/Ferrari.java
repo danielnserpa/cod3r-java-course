@@ -14,4 +14,9 @@ public class Ferrari extends Car {
             System.out.println("Your ferrari is parked.");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Ferrari speed is " + speed + " km/h";
+    }
 }

@@ -15,5 +15,10 @@ public class Fusca extends Car{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Fusca speed is " + speed + " km/h";
+    }
+
 
 }
