@@ -6,9 +6,11 @@ public class Game {
         Player p1 = new Player();
         Player p2 = new Player();
 
+        System.out.println("P1 life: " + p1.life);
+
         p2.attack(p1);
 
-        System.out.println(p1.life + "\n");
+        System.out.println("P1 life: " + p1.life);
 
         p1.walk(Direction.NORTH);
         p1.walk(Direction.NORTH);
@@ -18,7 +20,6 @@ public class Game {
         p1.walk(Direction.EAST);
         p1.walk(Direction.SOUTH);
         p1.walk(Direction.WEST);
-
         p1.walk(Direction.WEST);
         p1.walk(Direction.WEST);
         p1.walk(Direction.WEST);
@@ -30,16 +31,35 @@ public class Game {
 
         p2.attack(p1);
 
-        System.out.println(p1.life + "\n");
+        System.out.println("P1 life: " + p1.life);
 
         Player h1 = new Hero();
 
         h1.x = p1.x;
         h1.y = p1.y;
 
+        System.out.println("Hero life: " + h1.life);
+
         p2.attack(h1);
 
-        System.out.println(h1.life);
+        System.out.println("Hero life: " + h1.life);
+
+        Player m1 = new Monster();
+
+        m1.x = h1.x;
+        m1.y = h1.y;
+
+        System.out.println("Monster life: " + m1.life);
+
+        h1.attack(m1);
+        h1.attack(m1);
+
+        m1.attack(h1);
+        m1.attack(h1);
+        m1.attack(h1);
+
+        System.out.println("Hero life: " + h1.life);
+        System.out.println("Monster life: " + m1.life);
 
     }
 }
