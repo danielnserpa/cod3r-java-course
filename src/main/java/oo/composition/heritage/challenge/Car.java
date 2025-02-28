@@ -3,9 +3,18 @@ package oo.composition.heritage.challenge;
 public class Car {
 
     int speed = 0;
+    final int MAX_SPEED;
 
-    void accelerateCar (){
-        speed  += 5;
+    Car(int maxSpeed) {
+        MAX_SPEED = maxSpeed;
+    }
+
+    void accelerateCar () {
+        if (speed + 5 > MAX_SPEED) {
+            speed = MAX_SPEED;
+        } else {
+            speed += 5;
+        }
     }
 
     @Override

@@ -1,9 +1,17 @@
 package oo.composition.heritage.challenge;
 
 public class Fusca extends Car{
+
+    Fusca(int maxSpeed) {
+        super(maxSpeed);
+    }
     @Override
     void accelerateCar ( ){
-       speed += 10;
+        if (speed + 5 > MAX_SPEED) {
+            speed = MAX_SPEED;
+        } else {
+            speed += 10;
+        }
     }
     @Override
     void breakCar (){

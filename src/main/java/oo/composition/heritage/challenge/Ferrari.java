@@ -2,9 +2,17 @@ package oo.composition.heritage.challenge;
 
 public class Ferrari extends Car {
 
+    Ferrari(int maxSpeed) {
+        super(maxSpeed);
+    }
+
     @Override
-    void accelerateCar (){
-        speed += 15;
+    void accelerateCar () {
+        if (speed + 5 > MAX_SPEED) {
+            speed = MAX_SPEED;
+        } else {
+            speed += 15;
+        }
     }
     @Override
     void breakCar (){
