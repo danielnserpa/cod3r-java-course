@@ -3,14 +3,14 @@ package oo.composition.heritage.challenge;
 public class Fusca extends Car{
     @Override
     void accelerateCar ( ){
-        this.speed += 10;
+       speed += 10;
     }
     @Override
     void breakCar (){
-        this.speed  -= 10;
+        speed  -= 10;
 
         if (speed <= 0) {
-            this.speed = 0;
+           speed = 0;
             System.out.println("Your fusca is parked.");
         }
     }

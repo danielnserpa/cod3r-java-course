@@ -5,7 +5,7 @@ public class Car {
     int speed = 0;
 
     void accelerateCar (){
-        this.speed  += 5;
+        speed  += 5;
     }
 
     @Override
@@ -14,10 +14,10 @@ public class Car {
     }
 
     void breakCar (){
-        this.speed  -= 5;
+        speed  -= 5;
 
         if (speed < 5) {
-            this.speed = 0;
+           speed = 0;
             System.out.println("Your car is parked.");
         }
     }
