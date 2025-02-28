@@ -2,6 +2,10 @@ package oo.composition.heritage;
 
 public class Monster extends Player{
 
+    Monster(){
+        super();
+    }
+
     void attack (Player hero) {
         int deltaX = Math.abs(x - hero.x);
         int deltaY = Math.abs(y - hero.y);

@@ -61,5 +61,18 @@ public class Game {
         System.out.println("Hero life: " + h1.life);
         System.out.println("Monster life: " + m1.life);
 
+        Hero h2 = new Hero();
+
+        System.out.println(h2.x);
+
+        Hero h3 = new Hero(10, 10);
+
+        System.out.println(h3.x);
+
+        Monster m2 = new Monster();
+
+        System.out.println(m2.x);
+
+
     }
 }

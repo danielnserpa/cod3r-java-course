@@ -6,6 +6,15 @@ public class Player {
     int y = 5;
     int life = 100;
 
+Player(int x, int y) {
+    this.x = x;
+    this.y = y;
+}
+
+Player() {
+
+}
+
 
     void walk(Direction direction) {
         switch (direction) {
