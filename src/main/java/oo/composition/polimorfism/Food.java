@@ -1,6 +1,6 @@
 package oo.composition.polimorfism;
 
-public class Food {
+public abstract class Food {
 
     private double weight;
 

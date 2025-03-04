@@ -9,6 +9,7 @@ public class Lunch {
         Food ingredient2 = new Beans(0.33);
         Food ingredient3 = new Icecream(0.5);
 
+
         System.out.println(p1.getWeight());
 
         p1.eat(ingredient1);
