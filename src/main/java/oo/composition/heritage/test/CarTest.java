@@ -1,4 +1,8 @@
-package oo.composition.heritage.challenge;
+package oo.composition.heritage.test;
+
+import oo.composition.heritage.challenge.Car;
+import oo.composition.heritage.challenge.Ferrari;
+import oo.composition.heritage.challenge.Fusca;
 
 public class CarTest {
 

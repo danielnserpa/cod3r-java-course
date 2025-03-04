@@ -5,11 +5,11 @@ public class Car {
     int speed = 0;
     final int MAX_SPEED;
 
-    Car(int maxSpeed) {
+    public Car(int maxSpeed) {
         MAX_SPEED = maxSpeed;
     }
 
-    void accelerateCar () {
+    public void accelerateCar () {
         if (speed + 5 > MAX_SPEED) {
             speed = MAX_SPEED;
         } else {
@@ -22,7 +22,7 @@ public class Car {
         return "Car speed is " + speed + " km/h";
     }
 
-    void breakCar (){
+    public void breakCar (){
         speed  -= 5;
 
         if (speed < 5) {
