@@ -8,5 +8,7 @@ public class CalculationTest {
 
         System.out.println(sum.execute(2, 3));
         System.out.println(multiply.execute(2, 3));
+
+
     }
 }
