@@ -18,6 +18,9 @@ public class CalculationTestLambdaBinaryOperator {
         Calculation mult = (x, y) -> x * y;
         System.out.println(mult.execute(2, 3));
 
+        BinaryOperator<Integer> multiply = (x, y) -> x * y;
+        System.out.println(multiply.apply(2, 7));
+
         Calculation div = (x, y) -> x / y;
         System.out.println(div.execute(3, 5));
         
