@@ -8,6 +8,7 @@ public class Predicado {
 
         Product prod = new Product("Laptop", 2500, 0.1);
 
+        //Interface funcional Predicate sempre retorna um valor boolean
         Predicate<Product> isExpensive = product -> (product.price * ( 1 - product.discount)) > 1750;
 
         System.out.println(isExpensive.test(prod));
