@@ -10,7 +10,7 @@ public class ComposedPredicate {
 
         System.out.println(isEven.test(99));
 
-        System.out.println(isEven.and(isThreeDigits).test(122));
+        System.out.println(isEven.and(isThreeDigits).test(126));
 
         System.out.println(isEven.or(isThreeDigits).test(123));
     }
