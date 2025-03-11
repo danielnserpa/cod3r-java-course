@@ -4,7 +4,7 @@ import lambdas.Product;
 
 import java.util.function.UnaryOperator;
 
-public class Challenge {
+public class ChallengeByMe {
     public static void main(String[] args) {
 
       /*
