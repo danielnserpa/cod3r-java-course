@@ -2,16 +2,16 @@ package lambdas;
 
 public class Product {
 
-    final String name;
-    final double price;
-    final double discount;
+    public final String name;
+    public final double price;
+    public final double discount;
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", discount=" + discount +
+        return "Product {" +
+                "name = '" + name + '\'' +
+                ", price = " + price +
+                ", discount = " + discount +
                 '}';
     }
 
