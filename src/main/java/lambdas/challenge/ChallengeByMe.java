@@ -33,7 +33,9 @@ public class ChallengeByMe {
             }
         };
 
-        laptopDiscountedPrice = priceWithDiscount.andThen(isTaxes).apply(product1);
+        laptopDiscountedPrice = priceWithDiscount
+                .andThen(isTaxes)
+                .apply(product1);
         System.out.println("Your " + laptopDiscountedPrice.name + " price after taxes is " + String.format("%.2f", laptopDiscountedPrice.price));
 
         UnaryOperator<Product> isDelivery = product -> {
@@ -44,7 +46,10 @@ public class ChallengeByMe {
             }
         };
 
-        laptopDiscountedPrice = priceWithDiscount.andThen(isTaxes).andThen(isDelivery).apply(product1);
+        laptopDiscountedPrice = priceWithDiscount
+                .andThen(isTaxes)
+                .andThen(isDelivery)
+                .apply(product1);
         System.out.println("Your " + laptopDiscountedPrice.name + " price after delivery is " + String.format("%.2f", laptopDiscountedPrice.price));
 
         String laptopFormattedFinalPrice = "€" + String.format("%.2f", laptopDiscountedPrice.price).replace('.', ',');
@@ -57,10 +62,15 @@ public class ChallengeByMe {
         Product tvDiscountedPrice = priceWithDiscount.apply(product2);
         System.out.println("Your " + tvDiscountedPrice.name + " price with discount is " + String.format("%.2f", tvDiscountedPrice.price));
 
-        tvDiscountedPrice = priceWithDiscount.andThen(isTaxes).apply(product2);
+        tvDiscountedPrice = priceWithDiscount
+                .andThen(isTaxes)
+                .apply(product2);
         System.out.println("Your " + tvDiscountedPrice.name + " price after taxes is " + String.format("%.2f", tvDiscountedPrice.price));
 
-        tvDiscountedPrice = priceWithDiscount.andThen(isTaxes).andThen(isDelivery).apply(product2);
+        tvDiscountedPrice = priceWithDiscount
+                .andThen(isTaxes)
+                .andThen(isDelivery)
+                .apply(product2);
         System.out.println("Your " + tvDiscountedPrice.name + " price after delivery is " + String.format("%.2f", tvDiscountedPrice.price));
 
         String tvFormattedFinalPrice = "€" + String.format("%.2f", tvDiscountedPrice.price).replace('.', ',');
