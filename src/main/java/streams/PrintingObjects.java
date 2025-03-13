@@ -24,7 +24,9 @@ public class PrintingObjects {
 
         System.out.println(" ");
 
-        Stream<String>
+        Stream<String> stream = approved.stream();
+        stream.forEach(System.out::println);
+
 
 
 
