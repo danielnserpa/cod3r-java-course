@@ -22,6 +22,7 @@ public class MapChallenge {
 
         nums.stream().map(convertToBinary).map(reverse).map(convertToInteger).forEach(print);
 
+        // Printing infinite
 //        UnaryOperator<Integer> convertToInteger = n ->
     }
 }
