@@ -26,4 +26,3 @@ public class MapChallenge {
 //        UnaryOperator<Integer> convertToInteger = n ->
     }
 }
-7
