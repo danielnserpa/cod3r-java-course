@@ -9,8 +9,12 @@ public class Basic {
     public static void main(String[] args) {
 
         Student s1 = null;
-        printStudentsName(s1);
 
+        try {
+            printStudentsName(s1);
+        } catch (Exception e) {
+            System.out.println("An error occurred");
+        }
 
 //        System.out.println(7/0);
     }
