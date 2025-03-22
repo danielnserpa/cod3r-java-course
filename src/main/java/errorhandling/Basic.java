@@ -16,9 +16,10 @@ public class Basic {
             System.out.println("An error occurred");
         }
 
+        // It's better to deal with exception in a specific way. Generalizing errors is not smart.
         try {
             System.out.println(7/0);
-        } catch (Exception e) {
+        } catch (ArithmeticException e) {
             System.out.println("The division is impossible");
         }
     }
