@@ -14,6 +14,7 @@ public class Basic {
             printStudentsName(s1);
         } catch (Exception e) {
             System.out.println("An error occurred");
+            System.out.println("The error is: " + e.getMessage());
         }
 
         // It's better to deal with exception in a specific way. Generalizing errors is not smart.
@@ -21,6 +22,7 @@ public class Basic {
             System.out.println(7/0);
         } catch (ArithmeticException e) {
             System.out.println("The division is impossible");
+            System.out.println("The error is: " + e.getMessage());
         }
     }
 
