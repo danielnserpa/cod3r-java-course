@@ -16,7 +16,11 @@ public class Basic {
             System.out.println("An error occurred");
         }
 
-//        System.out.println(7/0);
+        try {
+            System.out.println(7/0);
+        } catch (Exception e) {
+            System.out.println("The division is impossible");
+        }
     }
 
 }
