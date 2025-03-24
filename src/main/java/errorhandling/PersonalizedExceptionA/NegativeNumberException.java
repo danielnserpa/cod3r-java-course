@@ -12,5 +12,6 @@ public class NegativeNumberException extends RuntimeException {
     public String getMessage() {
         return String.format("The atribute %s is negative", name);
 
+
     }
 }
