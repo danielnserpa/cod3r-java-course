@@ -10,7 +10,7 @@ public class NegativeNumberException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return String.format("The atribute %s is negative", name);
+        return String.format("The atribute %s is invalid", name);
 
 
     }
