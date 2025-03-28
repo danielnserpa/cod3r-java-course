@@ -40,6 +40,7 @@ public class ValidateTests {
             System.out.println(e.getMessage());
         }
 
+
         try {
             Validate.student(null);
         } catch (EmptyStringException | NegativeNumberException | IllegalArgumentException e) {
