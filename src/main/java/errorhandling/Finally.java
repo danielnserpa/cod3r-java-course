@@ -11,10 +11,13 @@ public class Finally {
 
         try {
             System.out.println(7/entrada.nextInt());
-
-            entrada.close();
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            // WWith finally, even if there's an error like / by 0, it will call finally
+            // Forces something to execute independently of having and error or not
+        } finally {
+            System.out.println("Finally...");
+            entrada.close();
         }
     }
 }
