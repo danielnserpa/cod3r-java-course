@@ -7,8 +7,6 @@ public class Finally {
 
         Scanner entrada = new Scanner(System.in);
 
-
-
         try {
             System.out.println(7/entrada.nextInt());
         } catch (Exception e) {
