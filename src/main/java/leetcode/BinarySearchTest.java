@@ -13,7 +13,6 @@ public class BinarySearchTest {
 
             int mid = (low + high) / 2;
             int result = array[mid];
-            System.out.println("mid is: " + result);
 
             if (result > target) {
                 high = mid - 1;
@@ -22,16 +21,16 @@ public class BinarySearchTest {
             } else {
                 return mid;
             }
-
         }
-
         return -1;
+
+
     }
 
     public static void main(String[] args) {
 
-        int[] num = {1, 4, 8, 13 ,21 ,34 ,53 ,62};
+        int[] num = {2, 4, 6, 8, 10, 12, 14};
 
-        System.out.println(BinariSearch(num, 4));
+        System.out.println(BinariSearch(num, 3));
     }
 }
