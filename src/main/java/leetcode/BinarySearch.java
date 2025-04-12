@@ -18,6 +18,7 @@ public class BinarySearch {
 
             if (result < target) {
                 low = mid + 1;
+
             } else if (result > target) {
                 high = mid - 1;
 
