@@ -30,6 +30,7 @@ public class BinarySearch {
         return -1;
     }
 
+
     public static void main(String[] args) {
 
         int[] n = {1, 5, 6, 7, 19, 28, 39, 42, 87, 133, 246, 350, 504};
