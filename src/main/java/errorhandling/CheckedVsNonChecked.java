@@ -19,6 +19,7 @@ public class CheckedVsNonChecked {
         }
 
         System.out.println("The end");
+
     }
 
     // Non checked doesn't need to be treated necessarily
