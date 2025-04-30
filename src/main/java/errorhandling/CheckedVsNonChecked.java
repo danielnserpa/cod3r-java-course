@@ -4,6 +4,8 @@ public class CheckedVsNonChecked {
 
     public static void main(String[] args) {
 
+
+
         try {
             generateError1();
         } catch (Exception e) {
