@@ -14,6 +14,7 @@ public class PowerOfTwo {
                 powerMin++;
             }
         }
+
 return false;
     }
 
