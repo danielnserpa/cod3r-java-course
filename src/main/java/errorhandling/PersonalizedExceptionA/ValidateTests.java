@@ -47,5 +47,14 @@ public class ValidateTests {
             System.out.println(e.getMessage());
         }
 
+
+        // Valido
+        try {
+            Student s4 = new Student("R", 7);
+            Validate.student(s4);
+        } catch (EmptyStringException | NegativeNumberException | IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
