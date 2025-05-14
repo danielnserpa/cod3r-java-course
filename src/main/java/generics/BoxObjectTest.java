@@ -15,6 +15,7 @@ public class BoxObjectTest {
 
         box2.insert("Hello");
 
+
         String thing2 = (String) box2.open();
         System.out.println(thing2);
     }
